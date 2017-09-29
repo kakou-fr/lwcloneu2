@@ -11,6 +11,8 @@ SCL     21
 
 Don't forget to reset the LEDWiz ID after flash
 
+binary directory contains the precompiled firmware
+
 LWCloneU2
 =========
 
