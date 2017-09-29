@@ -463,12 +463,7 @@ static uint8_t ReportAccelGyro()
 
 	#if defined(ENABLE_ANALOG_INPUT) && defined(ADC_MAPPING_TABLE)
 	#define MAP(port, pin, mux, minval, maxval, joyid, axis) \
-                if ((axis == 0) && (joyid == id)) { joy_x  = joyval8(ADC_getvalue(port##pin##_adcindex), (int16_t)(minval * 254), (int16_t)(maxval * 254)); } \
-                if ((axis == 1) && (joyid == id)) { joy_y  = joyval8(ADC_getvalue(port##pin##_adcindex), (int16_t)(minval * 254), (int16_t)(maxval * 254)); } \
-                if ((axis == 2) && (joyid == id)) { joy_z  = joyval8(ADC_getvalue(port##pin##_adcindex), (int16_t)(minval * 254), (int16_t)(maxval * 254)); } \
-                if ((axis == 3) && (joyid == id)) { joy_rx = joyval8(ADC_getvalue(port##pin##_adcindex), (int16_t)(minval * 254), (int16_t)(maxval * 254)); } \
-                if ((axis == 4) && (joyid == id)) { joy_ry = joyval8(ADC_getvalue(port##pin##_adcindex), (int16_t)(minval * 254), (int16_t)(maxval * 254)); } \
-                if ((axis == 5) && (joyid == id)) { joy_rz = joyval8(ADC_getvalue(port##pin##_adcindex), (int16_t)(minval * 254), (int16_t)(maxval * 254)); }	
+                if ((axis == 2) && (joyid == id)) { joy_z  = joyval8(ADC_getvalue(port##pin##_adcindex), (int16_t)(minval * 254), (int16_t)(maxval * 254)); } 
 	ADC_MAPPING_TABLE(MAP)
 	#undef MAP
 	#endif

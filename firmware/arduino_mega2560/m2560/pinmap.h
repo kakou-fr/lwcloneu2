@@ -96,16 +96,16 @@
 	\
 	/* end */
 
-
+//  		_map_( F, 0, 0x00, 0.000, 1.000, ID_AccelGyro, 0 ) /* Analog Pin 0 X   */ \
+//		_map_( F, 1, 0x01, 0.000, 1.000, ID_AccelGyro, 1 ) /* Analog Pin 1 Y   */ \
+//		_map_( F, 3, 0x03, 0.000, 1.000, ID_AccelGyro, 3 ) /* Analog Pin 3 Rx  */ \
+//		_map_( F, 4, 0x04, 0.000, 1.000, ID_AccelGyro, 4 ) /* Analog Pin 4 Ry  */ \
+//		_map_( F, 5, 0x05, 0.000, 1.000, ID_AccelGyro, 5 ) /* Analog Pin 5 Rz  */ \
+//	
 //
 // (port, pin, mux, value_min, value_max, joyid, axis)
 #define ADC_MAPPING_TABLE(_map_) \
 	\
-		_map_( F, 0, 0x00, 0.000, 1.000, ID_AccelGyro, 0 ) /* Analog Pin 0 X   */ \
-		_map_( F, 1, 0x01, 0.000, 1.000, ID_AccelGyro, 1 ) /* Analog Pin 1 Y   */ \
-		_map_( F, 2, 0x02, 0.000, 1.000, ID_AccelGyro, 2 ) /* Analog Pin 2 Z   */ \
-		_map_( F, 3, 0x03, 0.000, 1.000, ID_AccelGyro, 3 ) /* Analog Pin 3 Rx  */ \
-		_map_( F, 4, 0x04, 0.000, 1.000, ID_AccelGyro, 4 ) /* Analog Pin 4 Ry  */ \
-		_map_( F, 5, 0x05, 0.000, 1.000, ID_AccelGyro, 5 ) /* Analog Pin 5 Rz  */ \
+	_map_( F, 2, 0x02, 0.000, 1.000, ID_AccelGyro, 2 ) /* Analog Pin 2 Z   */ \
 	\
 	/* end */

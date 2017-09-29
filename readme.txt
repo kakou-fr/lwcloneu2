@@ -9,6 +9,12 @@ GND     GND
 SDA     20
 SCL     21
 
+Plunger ARDUINO
+Vin     5V
+Out     A2
+
+Pin A0, A1, A3, A4, A5 are now free
+
 Don't forget to reset the LEDWiz ID after flash
 
 binary directory contains the precompiled firmware
