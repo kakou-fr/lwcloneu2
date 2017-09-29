@@ -119,6 +119,10 @@ static const USB_Descriptor_HIDReport_Datatype_t PROGMEM MiscReport[] =
 #define USE_ACCELGYRO 0
 #endif
 
+#if !defined(ENABLE_MMA8451_NUDGE)
+#define ENABLE_MMA8451_NUDGE 0
+#endif
+
 #if !defined(USE_MOUSE)
 #define USE_MOUSE 0
 #endif
@@ -291,7 +295,7 @@ const USB_Descriptor_HIDReport_Datatype_t PROGMEM PanelReport[] =
 	0xc0,                   // END_COLLECTION
 	#endif // NUM_JOYSTICKS >= 4
 
-	#if (USE_ACCELGYRO)
+	#if (USE_ACCELGYRO) || (ENABLE_MMA8451_NUDGE)
 	0x05, 0x01,             // USAGE_PAGE (Generic Desktop)
 	0x09, 0x05,             // USAGE (Gamepad)
 	0xa1, 0x01,             // COLLECTION (Application)
