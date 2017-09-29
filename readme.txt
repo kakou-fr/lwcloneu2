@@ -1,3 +1,16 @@
+ADD SUPPORT FOR MMA845X ACCEL
+============================
+Port of the freescale nudge code to the arduino lwclone2u
+
+Connect : 
+MMA <=> ARDUINO
+Vin     5v
+GND     GND
+SDA     20
+SCL     21
+
+Don't forget to reset the LEDWiz ID after flash
+
 LWCloneU2
 =========
 
@@ -11,10 +24,7 @@ The LWCloneU2 project contains a compatible driver DLL "ledwiz.dll" replacement 
 
 Supported Hardware
 ==================
-- Custom Breakout Board with ATMega32U2
-- Arduino Leonardo (ATMega32U4)
 - Arduino Mega 2560 (tested with Rev. 3)
-- Arduino Uno Rev. 2/3 (untested)
 
 
 Building the firmware
